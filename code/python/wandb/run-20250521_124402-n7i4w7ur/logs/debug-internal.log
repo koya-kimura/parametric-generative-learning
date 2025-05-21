@@ -1,0 +1,15 @@
+{"time":"2025-05-21T12:44:02.5792+09:00","level":"INFO","msg":"using version","core version":"0.18.7"}
+{"time":"2025-05-21T12:44:02.579664+09:00","level":"INFO","msg":"created symlink","path":"/Users/kimurawatarunari/Documents/git-project_file/parametric-generative-learning/code/python/wandb/run-20250521_124402-n7i4w7ur/logs/debug-core.log"}
+{"time":"2025-05-21T12:44:02.801677+09:00","level":"INFO","msg":"created new stream","id":"n7i4w7ur"}
+{"time":"2025-05-21T12:44:02.801731+09:00","level":"INFO","msg":"stream: started","id":"n7i4w7ur"}
+{"time":"2025-05-21T12:44:02.801851+09:00","level":"INFO","msg":"sender: started","stream_id":"n7i4w7ur"}
+{"time":"2025-05-21T12:44:02.801891+09:00","level":"INFO","msg":"writer: Do: started","stream_id":"n7i4w7ur"}
+{"time":"2025-05-21T12:44:02.801952+09:00","level":"INFO","msg":"handler: started","stream_id":"n7i4w7ur"}
+{"time":"2025-05-21T12:44:03.302256+09:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-21T12:48:09.33799+09:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-05-21T12:48:09.36566+09:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-05-21T12:48:10.090365+09:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-05-21T12:48:10.114492+09:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-05-21T12:48:11.012145+09:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-05-21T12:48:11.08341+09:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-05-21T12:48:11.248527+09:00","level":"INFO","msg":"Pausing system monitor"}
