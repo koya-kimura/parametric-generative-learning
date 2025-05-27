@@ -1,0 +1,17 @@
+{"time":"2025-05-26T19:25:15.381812+09:00","level":"INFO","msg":"using version","core version":"0.18.7"}
+{"time":"2025-05-26T19:25:15.381904+09:00","level":"INFO","msg":"created symlink","path":"/Users/kimurawatarunari/Documents/git-project_file/parametric-generative-learning/code/python/wandb/run-20250526_192515-bz2r4bnr/logs/debug-core.log"}
+{"time":"2025-05-26T19:25:15.506931+09:00","level":"INFO","msg":"created new stream","id":"bz2r4bnr"}
+{"time":"2025-05-26T19:25:15.507124+09:00","level":"INFO","msg":"stream: started","id":"bz2r4bnr"}
+{"time":"2025-05-26T19:25:15.507389+09:00","level":"INFO","msg":"writer: Do: started","stream_id":"bz2r4bnr"}
+{"time":"2025-05-26T19:25:15.507413+09:00","level":"INFO","msg":"sender: started","stream_id":"bz2r4bnr"}
+{"time":"2025-05-26T19:25:15.507458+09:00","level":"INFO","msg":"handler: started","stream_id":"bz2r4bnr"}
+{"time":"2025-05-26T19:25:16.055695+09:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-26T19:29:41.046076+09:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-26T19:29:41.046734+09:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-26T19:29:42.051146+09:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"updating run config","runtime_seconds":0.306460625}],"total_operations":1}}
+{"time":"2025-05-26T19:29:46.36158+09:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-26T19:29:47.804501+09:00","level":"INFO","msg":"stream: closing","id":"bz2r4bnr"}
+{"time":"2025-05-26T19:29:47.804612+09:00","level":"INFO","msg":"handler: closed","stream_id":"bz2r4bnr"}
+{"time":"2025-05-26T19:29:47.80466+09:00","level":"INFO","msg":"sender: closed","stream_id":"bz2r4bnr"}
+{"time":"2025-05-26T19:29:47.804656+09:00","level":"INFO","msg":"writer: Close: closed","stream_id":"bz2r4bnr"}
+{"time":"2025-05-26T19:29:47.804821+09:00","level":"INFO","msg":"stream: closed","id":"bz2r4bnr"}

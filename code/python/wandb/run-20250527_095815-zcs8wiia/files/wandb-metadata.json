@@ -1,0 +1,38 @@
+{
+  "os":  "macOS-14.2.1-arm64-arm-64bit",
+  "python":  "3.10.13",
+  "startedAt":  "2025-05-27T00:58:15.501467Z",
+  "program":  "/Users/kimurawatarunari/Documents/git-project_file/parametric-generative-learning/code/python/image2params_multi_v3.ipynb",
+  "git":  {
+    "remote":  "https://github.com/koya-kimura/parametric-generative-learning.git",
+    "commit":  "3a11c97a6dff64b873486b26e0e2ac26d96f9d6d"
+  },
+  "email":  "2ktmnri8@gmail.com",
+  "root":  "/Users/kimurawatarunari/Documents/git-project_file/parametric-generative-learning/code/python",
+  "host":  "kimurawatarunarinoMacBook-Pro-2.local",
+  "username":  "kimurawatarunari",
+  "executable":  "/opt/homebrew/opt/python@3.10/bin/python3.10",
+  "codePathLocal":  "image2params_multi_v3.ipynb",
+  "cpu_count":  8,
+  "cpu_count_logical":  8,
+  "disk":  {
+    "/":  {
+      "total":  "494384795648",
+      "used":  "476589993984"
+    }
+  },
+  "memory":  {
+    "total":  "17179869184"
+  },
+  "cpu":  {
+    "count":  8,
+    "countLogical":  8
+  },
+  "apple":  {
+    "name":  "Apple M1",
+    "ecpuCores":  4,
+    "pcpuCores":  4,
+    "gpuCores":  8,
+    "memoryGb":  16
+  }
+}

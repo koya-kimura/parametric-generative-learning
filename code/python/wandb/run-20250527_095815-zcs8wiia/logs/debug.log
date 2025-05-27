@@ -1,0 +1,38 @@
+2025-05-27 09:58:15,497 INFO    MainThread:88170 [wandb_setup.py:_flush():79] Current SDK version is 0.18.7
+2025-05-27 09:58:15,497 INFO    MainThread:88170 [wandb_setup.py:_flush():79] Configure stats pid to 88170
+2025-05-27 09:58:15,497 INFO    MainThread:88170 [wandb_setup.py:_flush():79] Loading settings from /Users/kimurawatarunari/.config/wandb/settings
+2025-05-27 09:58:15,497 INFO    MainThread:88170 [wandb_setup.py:_flush():79] Loading settings from /Users/kimurawatarunari/Documents/git-project_file/parametric-generative-learning/code/python/wandb/settings
+2025-05-27 09:58:15,498 INFO    MainThread:88170 [wandb_setup.py:_flush():79] Loading settings from environment variables: {}
+2025-05-27 09:58:15,498 INFO    MainThread:88170 [wandb_setup.py:_flush():79] Applying setup settings: {'mode': None, '_disable_service': None}
+2025-05-27 09:58:15,498 INFO    MainThread:88170 [wandb_setup.py:_flush():79] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2025-05-27 09:58:15,498 INFO    MainThread:88170 [wandb_setup.py:_flush():79] Applying login settings: {}
+2025-05-27 09:58:15,498 INFO    MainThread:88170 [wandb_init.py:_log_setup():533] Logging user logs to /Users/kimurawatarunari/Documents/git-project_file/parametric-generative-learning/code/python/wandb/run-20250527_095815-zcs8wiia/logs/debug.log
+2025-05-27 09:58:15,498 INFO    MainThread:88170 [wandb_init.py:_log_setup():534] Logging internal logs to /Users/kimurawatarunari/Documents/git-project_file/parametric-generative-learning/code/python/wandb/run-20250527_095815-zcs8wiia/logs/debug-internal.log
+2025-05-27 09:58:15,498 INFO    MainThread:88170 [wandb_init.py:_jupyter_setup():479] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x293d0f100>
+2025-05-27 09:58:15,498 INFO    MainThread:88170 [wandb_init.py:init():619] calling init triggers
+2025-05-27 09:58:15,498 INFO    MainThread:88170 [wandb_init.py:init():626] wandb.init called with sweep_config: {}
+config: {'epochs': 10, 'batch_size': 32, 'learning_rate': 0.001, 'image_size': 128, 'loss_weights': [0.005742417598103494, 1.0, 0.44900474659074535, 5.3580972622666175e-08], 'val_loss_mode': 'average'}
+2025-05-27 09:58:15,498 INFO    MainThread:88170 [wandb_init.py:init():669] starting backend
+2025-05-27 09:58:15,498 INFO    MainThread:88170 [wandb_init.py:init():673] sending inform_init request
+2025-05-27 09:58:15,500 INFO    MainThread:88170 [backend.py:_multiprocessing_setup():104] multiprocessing start_methods=spawn,fork,forkserver, using: spawn
+2025-05-27 09:58:15,501 INFO    MainThread:88170 [wandb_init.py:init():686] backend started and connected
+2025-05-27 09:58:15,516 INFO    MainThread:88170 [wandb_run.py:_label_probe_notebook():1339] probe notebook
+2025-05-27 09:58:15,516 INFO    MainThread:88170 [wandb_run.py:_label_probe_notebook():1349] Unable to probe notebook: Expecting value: line 1 column 1 (char 0)
+2025-05-27 09:58:15,516 INFO    MainThread:88170 [wandb_init.py:init():781] updated telemetry
+2025-05-27 09:58:15,549 INFO    MainThread:88170 [wandb_init.py:init():814] communicating run to backend with 90.0 second timeout
+2025-05-27 09:58:16,399 INFO    MainThread:88170 [wandb_init.py:init():867] starting run threads in backend
+2025-05-27 09:58:16,622 INFO    MainThread:88170 [wandb_run.py:_console_start():2456] atexit reg
+2025-05-27 09:58:16,622 INFO    MainThread:88170 [wandb_run.py:_redirect():2305] redirect: wrap_raw
+2025-05-27 09:58:16,623 INFO    MainThread:88170 [wandb_run.py:_redirect():2370] Wrapping output streams.
+2025-05-27 09:58:16,623 INFO    MainThread:88170 [wandb_run.py:_redirect():2395] Redirects installed.
+2025-05-27 09:58:16,626 INFO    MainThread:88170 [wandb_init.py:init():911] run started, returning control to user process
+2025-05-27 10:02:25,149 INFO    MainThread:88170 [wandb_run.py:_finish():2155] finishing run ritsumeikan-math/parametric-visual-learning/zcs8wiia
+2025-05-27 10:02:25,151 INFO    MainThread:88170 [jupyter.py:save_history():459] not saving jupyter history
+2025-05-27 10:02:25,151 INFO    MainThread:88170 [jupyter.py:save_ipynb():387] not saving jupyter notebook
+2025-05-27 10:02:25,151 INFO    MainThread:88170 [wandb_init.py:_jupyter_teardown():461] cleaning up jupyter logic
+2025-05-27 10:02:25,151 INFO    MainThread:88170 [wandb_run.py:_atexit_cleanup():2420] got exitcode: 0
+2025-05-27 10:02:25,151 INFO    MainThread:88170 [wandb_run.py:_restore():2402] restore
+2025-05-27 10:02:25,151 INFO    MainThread:88170 [wandb_run.py:_restore():2408] restore done
+2025-05-27 10:02:30,775 INFO    MainThread:88170 [wandb_run.py:_footer_history_summary_info():3960] rendering history
+2025-05-27 10:02:30,775 INFO    MainThread:88170 [wandb_run.py:_footer_history_summary_info():3992] rendering summary
+2025-05-27 10:02:30,784 INFO    MainThread:88170 [wandb_run.py:_footer_sync_info():3921] logging synced files

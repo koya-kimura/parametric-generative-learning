@@ -1,0 +1,17 @@
+{"time":"2025-05-27T09:58:15.508958+09:00","level":"INFO","msg":"using version","core version":"0.18.7"}
+{"time":"2025-05-27T09:58:15.509043+09:00","level":"INFO","msg":"created symlink","path":"/Users/kimurawatarunari/Documents/git-project_file/parametric-generative-learning/code/python/wandb/run-20250527_095815-zcs8wiia/logs/debug-core.log"}
+{"time":"2025-05-27T09:58:15.629913+09:00","level":"INFO","msg":"created new stream","id":"zcs8wiia"}
+{"time":"2025-05-27T09:58:15.629981+09:00","level":"INFO","msg":"stream: started","id":"zcs8wiia"}
+{"time":"2025-05-27T09:58:15.63023+09:00","level":"INFO","msg":"writer: Do: started","stream_id":"zcs8wiia"}
+{"time":"2025-05-27T09:58:15.630177+09:00","level":"INFO","msg":"handler: started","stream_id":"zcs8wiia"}
+{"time":"2025-05-27T09:58:15.630225+09:00","level":"INFO","msg":"sender: started","stream_id":"zcs8wiia"}
+{"time":"2025-05-27T09:58:16.403932+09:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-05-27T10:02:25.152683+09:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-05-27T10:02:25.153467+09:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-05-27T10:02:26.15782+09:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"saving job artifact","runtime_seconds":0.492081334},{"desc":"uploading wandb-summary.json","runtime_seconds":0.473181375,"progress":"171B/171B"},{"desc":"uploading config.yaml","runtime_seconds":0.180449375,"progress":"899B/899B"},{"desc":"uploading output.log","runtime_seconds":0.180437542,"progress":"1.4KB/1.4KB"}],"total_operations":4}}
+{"time":"2025-05-27T10:02:29.300184+09:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-27T10:02:30.787751+09:00","level":"INFO","msg":"stream: closing","id":"zcs8wiia"}
+{"time":"2025-05-27T10:02:30.787819+09:00","level":"INFO","msg":"handler: closed","stream_id":"zcs8wiia"}
+{"time":"2025-05-27T10:02:30.787841+09:00","level":"INFO","msg":"sender: closed","stream_id":"zcs8wiia"}
+{"time":"2025-05-27T10:02:30.787834+09:00","level":"INFO","msg":"writer: Close: closed","stream_id":"zcs8wiia"}
+{"time":"2025-05-27T10:02:30.787998+09:00","level":"INFO","msg":"stream: closed","id":"zcs8wiia"}
