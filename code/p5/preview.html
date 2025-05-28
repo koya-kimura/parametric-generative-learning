@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>preview</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.min.js"></script>
+  <script src="art/building.js"></script>
+  <style>
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      background: #111;
+      color: #eee;
+      font-family: 'Helvetica Neue', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h1 {
+      margin: 1em 0 0.5em;
+      font-weight: 300;
+      font-size: 1.5rem;
+    }
+
+    #controls {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 1em;
+    }
+
+    button {
+      background: #222;
+      color: #eee;
+      border: 1px solid #444;
+      padding: 6px 16px;
+      font-size: 14px;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    button:hover {
+      background: #333;
+    }
+
+    #canvas-holder {
+      width: 90vmin;
+      height: 90vmin;
+      max-width: 500px;
+      max-height: 500px;
+    }
+
+    canvas {
+      width: 100% !important;
+      height: 100% !important;
+      display: block;
+      border: 1px solid #333;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Preview Sketch</h1>
+  <div id="controls">
+    <button onclick="updateOnce()">更新</button>
+    <button onclick="startAuto()">自動再生</button>
+    <button onclick="stopAuto()">停止</button>
+  </div>
+  <div id="canvas-holder"></div>
+
+  <script>
+    let params;
+    let autoTimer = null;
+    let canvasSize;
+
+    function setup() {
+      canvasSize = selectCanvasSize();
+      const c = createCanvas(canvasSize, canvasSize);
+      c.parent("canvas-holder");
+      noLoop();
+      params = generateParams();
+      draw();
+    }
+
+    function windowResized() {
+      canvasSize = selectCanvasSize();
+      resizeCanvas(canvasSize, canvasSize);
+      draw();
+    }
+
+    function selectCanvasSize() {
+      const holder = document.getElementById("canvas-holder");
+      return Math.min(holder.clientWidth, holder.clientHeight);
+    }
+
+    function draw() {
+      clear();
+      drawScene(this, params);
+    }
+
+    function updateOnce() {
+      params = generateParams();
+      draw();
+    }
+
+    function startAuto() {
+      if (!autoTimer) {
+        autoTimer = setInterval(() => {
+          params = generateParams();
+          draw();
+        }, 1000);
+      }
+    }
+
+    function stopAuto() {
+      if (autoTimer) {
+        clearInterval(autoTimer);
+        autoTimer = null;
+      }
+    }
+  </script>
+</body>
+
+</html>
