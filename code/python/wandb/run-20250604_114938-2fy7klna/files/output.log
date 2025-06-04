@@ -1,0 +1,26 @@
+Epoch 1/10:   0%|          | 0/3 [00:00<?, ?it/s]/opt/homebrew/lib/python3.10/site-packages/torch/nn/modules/loss.py:535: UserWarning: Using a target size (torch.Size([32, 1])) that is different to the input size (torch.Size([32])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Epoch 1/10:  67%|██████▋   | 2/3 [00:03<00:01,  1.54s/it, loss=1.16]/opt/homebrew/lib/python3.10/site-packages/torch/nn/modules/loss.py:535: UserWarning: Using a target size (torch.Size([16, 1])) that is different to the input size (torch.Size([16])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Epoch 1/10: 100%|██████████| 3/3 [00:04<00:00,  1.49s/it, loss=0.147]
+/opt/homebrew/lib/python3.10/site-packages/torch/nn/modules/loss.py:535: UserWarning: Using a target size (torch.Size([20, 1])) that is different to the input size (torch.Size([20])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+[1] 🟢 Train Loss: 0.5887 | 🔵 Val Loss: 0.2492
+Epoch 2/10: 100%|██████████| 3/3 [00:01<00:00,  1.64it/s, loss=0.173]
+[2] 🟢 Train Loss: 0.2350 | 🔵 Val Loss: 0.1588
+Epoch 3/10: 100%|██████████| 3/3 [00:01<00:00,  2.23it/s, loss=0.0745]
+[3] 🟢 Train Loss: 0.1328 | 🔵 Val Loss: 0.0960
+Epoch 4/10: 100%|██████████| 3/3 [00:01<00:00,  2.47it/s, loss=0.0778]
+[4] 🟢 Train Loss: 0.0882 | 🔵 Val Loss: 0.0965
+Epoch 5/10: 100%|██████████| 3/3 [00:01<00:00,  2.45it/s, loss=0.0997]
+[5] 🟢 Train Loss: 0.0894 | 🔵 Val Loss: 0.0932
+Epoch 6/10: 100%|██████████| 3/3 [00:01<00:00,  2.53it/s, loss=0.0605]
+[6] 🟢 Train Loss: 0.0852 | 🔵 Val Loss: 0.0950
+Epoch 7/10: 100%|██████████| 3/3 [00:01<00:00,  2.16it/s, loss=0.0861]
+[7] 🟢 Train Loss: 0.0912 | 🔵 Val Loss: 0.0953
+Epoch 8/10: 100%|██████████| 3/3 [00:01<00:00,  2.41it/s, loss=0.0933]
+[8] 🟢 Train Loss: 0.0911 | 🔵 Val Loss: 0.0934
+Epoch 9/10: 100%|██████████| 3/3 [00:01<00:00,  2.62it/s, loss=0.125] 
+[9] 🟢 Train Loss: 0.0873 | 🔵 Val Loss: 0.0927
+Epoch 10/10: 100%|██████████| 3/3 [00:01<00:00,  2.46it/s, loss=0.0881]
+[10] 🟢 Train Loss: 0.0867 | 🔵 Val Loss: 0.0929

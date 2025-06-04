@@ -1,10 +1,9 @@
+// ranking.js
+
 let graphicsLeft, graphicsRight, canvas;
 let paramsList = [];
-let comparisons = [];
 let currentPair = [];
-let results = {};
-let totalComparisons = 0;
-let progressCount = 0;
+let ranker;
 let shouldDownloadImages = false;
 
 function setup() {
@@ -12,7 +11,6 @@ function setup() {
   canvas.parent("canvasWrapper");
   graphicsLeft = createGraphics(width / 2, height);
   graphicsRight = createGraphics(width / 2, height);
-
   noLoop();
 
   textAlign(CENTER, CENTER);
@@ -33,29 +31,19 @@ function startRanking() {
   }
 
   paramsList = Array.from({ length: n }, generateParams);
-  results = {};
-  progressCount = 0;
-
-  comparisons = [];
-  for (let i = 0; i < n; i++) {
-    for (let j = i + 1; j < n; j++) {
-      comparisons.push([i, j]);
-    }
-  }
-  shuffle(comparisons, true);
-  totalComparisons = comparisons.length;
+  ranker = new RankingSystem(paramsList);
 
   nextComparison();
 }
 
 function nextComparison() {
-  if (comparisons.length === 0) {
+  if (!ranker.hasNext()) {
     document.getElementById("progressText").innerText = "完了！";
     document.getElementById("progressBar").style.width = "100%";
     return;
   }
 
-  currentPair = comparisons.pop();
+  currentPair = ranker.nextPair();
   const [i, j] = currentPair;
   drawScene(graphicsLeft, paramsList[i]);
   drawScene(graphicsRight, paramsList[j]);
@@ -70,32 +58,29 @@ function draw() {
 }
 
 function vote(winnerSide) {
-  const [i, j] = currentPair;
-  const winner = winnerSide === "left" ? i : j;
-
-  if (!results[winner]) results[winner] = 0;
-  results[winner] += 1;
-
-  progressCount++;
+  ranker.vote(winnerSide);
   nextComparison();
 }
 
 function updateProgress() {
+  const prog = ranker.getProgress();
   document.getElementById("progressText").innerText =
-    `進捗: ${progressCount} / ${totalComparisons}`;
-  const percentage = (progressCount / totalComparisons) * 100;
-  document.getElementById("progressBar").style.width = `${percentage}%`;
+    `進捗: ${prog.done} / ${prog.total}`;
+  document.getElementById("progressBar").style.width = `${prog.percentage}%`;
 }
 
 function downloadCSV() {
-  const headers = ["id", ...Object.keys(paramsList[0]), "rating"];
+  const results = ranker.getResults();
+  const ranks = ranker.getRankedIndices();
+
+  const headers = ["id", ...Object.keys(paramsList[0]), "score", "rank"];
   const rows = paramsList.map((params, idx) => {
-    const rating = results[idx] || 0;
     const values = [`id_${idx.toString().padStart(4, "0")}`];
     for (let key of Object.keys(params)) {
       values.push(typeof params[key] === "number" ? params[key].toFixed(3) : params[key]);
     }
-    values.push(rating);
+    values.push(results[idx]);
+    values.push(ranks[idx]);
     return values.join(",");
   });
 

@@ -1,0 +1,17 @@
+{"time":"2025-06-04T11:49:38.365065+09:00","level":"INFO","msg":"using version","core version":"0.18.7"}
+{"time":"2025-06-04T11:49:38.365238+09:00","level":"INFO","msg":"created symlink","path":"/Users/kimurawatarunari/Documents/git-project_file/parametric-generative-learning/code/python/wandb/run-20250604_114938-2fy7klna/logs/debug-core.log"}
+{"time":"2025-06-04T11:49:38.489209+09:00","level":"INFO","msg":"created new stream","id":"2fy7klna"}
+{"time":"2025-06-04T11:49:38.489279+09:00","level":"INFO","msg":"stream: started","id":"2fy7klna"}
+{"time":"2025-06-04T11:49:38.489396+09:00","level":"INFO","msg":"sender: started","stream_id":"2fy7klna"}
+{"time":"2025-06-04T11:49:38.489654+09:00","level":"INFO","msg":"handler: started","stream_id":"2fy7klna"}
+{"time":"2025-06-04T11:49:38.489664+09:00","level":"INFO","msg":"writer: Do: started","stream_id":"2fy7klna"}
+{"time":"2025-06-04T11:49:38.921853+09:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-04T11:49:59.052403+09:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-04T11:49:59.053201+09:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-04T11:50:00.057463+09:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading wandb-summary.json","runtime_seconds":0.746175042,"progress":"166B/166B"},{"desc":"saving job artifact","runtime_seconds":0.744789666},{"desc":"uploading config.yaml","runtime_seconds":0.507756625,"progress":"734B/734B"},{"desc":"uploading output.log","runtime_seconds":0.507743417,"progress":"2.5KB/2.5KB"}],"total_operations":4}}
+{"time":"2025-06-04T11:50:02.795515+09:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-04T11:50:04.090524+09:00","level":"INFO","msg":"stream: closing","id":"2fy7klna"}
+{"time":"2025-06-04T11:50:04.090577+09:00","level":"INFO","msg":"handler: closed","stream_id":"2fy7klna"}
+{"time":"2025-06-04T11:50:04.090597+09:00","level":"INFO","msg":"writer: Close: closed","stream_id":"2fy7klna"}
+{"time":"2025-06-04T11:50:04.090617+09:00","level":"INFO","msg":"sender: closed","stream_id":"2fy7klna"}
+{"time":"2025-06-04T11:50:04.090841+09:00","level":"INFO","msg":"stream: closed","id":"2fy7klna"}
