@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>ペアワイズランキング</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.0/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+    <script src="art/various-face.js"></script>
+    <script src="system/ranking.js"></script>
+    <style>
+        body {
+            margin: 0;
+            background: #111;
+            color: #fff;
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        #canvasWrapper {
+            margin: 20px 0;
+        }
+
+        #voteButtons {
+            margin: 20px;
+        }
+
+        button {
+            margin: 0 10px;
+            padding: 0.6em 1.5em;
+            font-size: 16px;
+            background: #333;
+            color: white;
+            border: 1px solid #555;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.2s ease;
+        }
+
+        button:hover {
+            background: #555;
+        }
+
+        input[type="number"] {
+            margin: 10px;
+            padding: 0.3em;
+            width: 60px;
+        }
+
+        input[type="checkbox"] {
+            margin-left: 10px;
+        }
+
+        #progressText {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #ccc;
+        }
+
+        #progressBarWrapper {
+            width: 80%;
+            background-color: #333;
+            border-radius: 8px;
+            overflow: hidden;
+            height: 16px;
+            margin-top: 4px;
+        }
+
+        #progressBar {
+            height: 100%;
+            width: 0%;
+            background-color: #0f0;
+            transition: width 0.3s;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>ペアワイズランキングツール</h1>
+
+    <label>
+        画像枚数:
+        <input type="number" id="numImages" value="20" min="2" max="100" />
+    </label>
+    <label>
+        <input type="checkbox" id="includeImages" />
+        画像も含めてダウンロード（zip）
+    </label>
+    <br />
+    <button onclick="startRanking()">ランキング開始</button>
+
+    <div id="canvasWrapper"></div>
+
+    <div id="voteButtons">
+        <button onclick="vote('left')">← 左が好み</button>
+        <button onclick="vote('right')">右が好み →</button>
+    </div>
+
+    <div id="progressText">進捗: 0 / ?</div>
+    <div id="progressBarWrapper">
+        <div id="progressBar"></div>
+    </div>
+
+    <button onclick="downloadCSV()">結果をダウンロード</button>
+</body>
+
+</html>
