@@ -1,0 +1,17 @@
+{"time":"2025-06-11T11:59:25.158551+09:00","level":"INFO","msg":"using version","core version":"0.18.7"}
+{"time":"2025-06-11T11:59:25.1586+09:00","level":"INFO","msg":"created symlink","path":"/Users/kimurawatarunari/Documents/git-project_file/parametric-generative-learning/code/python/wandb/run-20250611_115925-phkzk36s/logs/debug-core.log"}
+{"time":"2025-06-11T11:59:25.273655+09:00","level":"INFO","msg":"created new stream","id":"phkzk36s"}
+{"time":"2025-06-11T11:59:25.273712+09:00","level":"INFO","msg":"stream: started","id":"phkzk36s"}
+{"time":"2025-06-11T11:59:25.273789+09:00","level":"INFO","msg":"handler: started","stream_id":"phkzk36s"}
+{"time":"2025-06-11T11:59:25.273813+09:00","level":"INFO","msg":"writer: Do: started","stream_id":"phkzk36s"}
+{"time":"2025-06-11T11:59:25.274007+09:00","level":"INFO","msg":"sender: started","stream_id":"phkzk36s"}
+{"time":"2025-06-11T11:59:25.665962+09:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-11T11:59:25.973193+09:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-11T11:59:25.973876+09:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-11T11:59:26.978527+09:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"saving job artifact","runtime_seconds":0.275240208},{"desc":"uploading output.log","runtime_seconds":0.029447875},{"desc":"uploading config.yaml","runtime_seconds":0.029440333,"progress":"606B/606B"}],"total_operations":3}}
+{"time":"2025-06-11T11:59:27.666914+09:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-11T11:59:28.972652+09:00","level":"INFO","msg":"stream: closing","id":"phkzk36s"}
+{"time":"2025-06-11T11:59:28.972677+09:00","level":"INFO","msg":"handler: closed","stream_id":"phkzk36s"}
+{"time":"2025-06-11T11:59:28.972689+09:00","level":"INFO","msg":"writer: Close: closed","stream_id":"phkzk36s"}
+{"time":"2025-06-11T11:59:28.972704+09:00","level":"INFO","msg":"sender: closed","stream_id":"phkzk36s"}
+{"time":"2025-06-11T11:59:28.972798+09:00","level":"INFO","msg":"stream: closed","id":"phkzk36s"}

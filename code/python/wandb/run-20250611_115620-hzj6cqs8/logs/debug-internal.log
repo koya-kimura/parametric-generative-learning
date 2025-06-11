@@ -1,0 +1,17 @@
+{"time":"2025-06-11T11:56:20.446674+09:00","level":"INFO","msg":"using version","core version":"0.18.7"}
+{"time":"2025-06-11T11:56:20.446739+09:00","level":"INFO","msg":"created symlink","path":"/Users/kimurawatarunari/Documents/git-project_file/parametric-generative-learning/code/python/wandb/run-20250611_115620-hzj6cqs8/logs/debug-core.log"}
+{"time":"2025-06-11T11:56:20.660711+09:00","level":"INFO","msg":"created new stream","id":"hzj6cqs8"}
+{"time":"2025-06-11T11:56:20.660776+09:00","level":"INFO","msg":"stream: started","id":"hzj6cqs8"}
+{"time":"2025-06-11T11:56:20.660823+09:00","level":"INFO","msg":"handler: started","stream_id":"hzj6cqs8"}
+{"time":"2025-06-11T11:56:20.660838+09:00","level":"INFO","msg":"writer: Do: started","stream_id":"hzj6cqs8"}
+{"time":"2025-06-11T11:56:20.660935+09:00","level":"INFO","msg":"sender: started","stream_id":"hzj6cqs8"}
+{"time":"2025-06-11T11:56:21.060802+09:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-11T11:56:21.280968+09:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-11T11:56:21.281378+09:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-11T11:56:22.286601+09:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"saving job artifact","runtime_seconds":0.283428},{"desc":"uploading wandb-summary.json","runtime_seconds":0.249531875,"progress":"24B/24B"},{"desc":"uploading config.yaml","runtime_seconds":0.060541834,"progress":"606B/606B"},{"desc":"uploading output.log","runtime_seconds":0.060526292}],"total_operations":4}}
+{"time":"2025-06-11T11:56:25.33247+09:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-11T11:56:26.581919+09:00","level":"INFO","msg":"stream: closing","id":"hzj6cqs8"}
+{"time":"2025-06-11T11:56:26.581946+09:00","level":"INFO","msg":"handler: closed","stream_id":"hzj6cqs8"}
+{"time":"2025-06-11T11:56:26.58196+09:00","level":"INFO","msg":"writer: Close: closed","stream_id":"hzj6cqs8"}
+{"time":"2025-06-11T11:56:26.581978+09:00","level":"INFO","msg":"sender: closed","stream_id":"hzj6cqs8"}
+{"time":"2025-06-11T11:56:26.582211+09:00","level":"INFO","msg":"stream: closed","id":"hzj6cqs8"}
